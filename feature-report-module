@@ -1,14 +1,18 @@
+/*
+Kindly add some comments to enhances the readability
+*/
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class LeaveReportGenerator {
-
+// here a class called LeaveRecord includes employeeId , name , leaveDays ,leaveType
     static class LeaveRecord {
         String employeeId;
         String name;
         int leaveDays;
         String leaveType;
-
+// here is constructor used to assgin data to the variables
         LeaveRecord(String employeeId, String name, int leaveDays, String leaveType) {
             this.employeeId = employeeId;
             this.name = name;
@@ -17,6 +21,7 @@ public class LeaveReportGenerator {
         }
     }
 
+ // here is the main class
     public static void main(String[] args) {
         LeaveRecord[] records = {
             new LeaveRecord("E001", "Alice", 5, "Annual"),
